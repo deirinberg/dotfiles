@@ -1,0 +1,16 @@
+alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias pgstatus='pg_ctl -D /usr/local/var/postgres status'
+alias fs='foreman start'
+alias rm=trash
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+alias reload='. ~/.zshrc'
+alias git='hub'
+alias gs='git status'
+alias gd='git diff'
+alias gcam='git commit -am'
+alias gap='git add -p'
+alias gp='git pull origin `get_git_branch`'
+alias gps='git push origin `get_git_branch`'
+alias gl='git log'
+alias ls='ls -la'

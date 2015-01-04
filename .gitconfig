@@ -1,0 +1,29 @@
+
+[user]
+  name = David Yamnitsky
+  email = davidy@me.com
+
+[github]
+  user = nitsky
+
+[core]
+  editor = vim
+
+[color]
+  ui = auto
+
+[alias]
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+
+[hub]
+  protocol = https
+
+[credential]
+  helper = osxkeychain
+
