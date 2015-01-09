@@ -40,6 +40,7 @@ Bundle 'brendonrapp/smyck-vim'
 
 " plugins
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'tomtom/checksyntax_vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
@@ -76,6 +77,9 @@ set ai
 set si
 set nu
 set nofoldenable
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
+let &colorcolumn=join(range(81,999),",")
+let &colorcolumn="80,".join(range(120,999),",")
 
 " omg automatic comment insertion is the worst
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o

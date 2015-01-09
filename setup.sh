@@ -19,7 +19,7 @@ echo "installing zprezto... done"
 
 echo "symlinking dotfiles..."
 mkdir -p .vim/bundle
-files=".aliases .functions .gitconfig .vim .vimrc .zlogin .zprezto .zpreztorc .zshrc"
+files=".aliases .functions .gitconfig .tmux.conf .vim .vimrc .zlogin .zprezto .zpreztorc .zshrc"
 for file in $files; do
   rm ~/$file
   echo "creating symlink for $file"

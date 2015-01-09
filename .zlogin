@@ -1,1 +1,2 @@
+tmux new
 fortune | cowsay

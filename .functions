@@ -1,6 +1,18 @@
 # create a new directory and enter it
 function cdmkdir() { mkdir -p "$@" && cd "$@" }
 
+# Ctrl+space : print Git/Svn status or list files with ls
+vcs-status() {
+  \print; zle accept-line;
+  if [ -d .git ]; then
+    git status
+  else
+    ls
+  fi
+}
+zle -N vcs-status
+bindkey '^ ' vcs-status
+
 # move file/directory to the trash
 function trash () {
   local trash_dir="${HOME}/.Trash"
