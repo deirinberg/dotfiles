@@ -59,6 +59,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'ervandew/supertab'
 Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
+Plugin 'airblade/vim-gitgutter'
 
 " syntax files
 Bundle 'jelera/vim-javascript-syntax'
@@ -78,8 +79,7 @@ set si
 set nu
 set nofoldenable
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
-let &colorcolumn=join(range(81,999),",")
-let &colorcolumn="80,".join(range(120,999),",")
+let &colorcolumn=join(range(81,81),",")
 
 " omg automatic comment insertion is the worst
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -179,6 +179,9 @@ nnoremap <leader>w :tabclose<CR>
 nnoremap <leader>ed :tabnew ~/.vimrc<cr>
 nnoremap <leader>src :source ~/.vimrc<cr>
 nnoremap <leader>tgt :set cursorcolumn! cursorline!<CR>
+
+" show hidden files in NERDTree
+let NERDTreeShowHidden=1
 
 " kj/jk is better than ctrl-c or esc - also autosave when leaving insert mode
 inoremap kj <Esc>:w<CR>
