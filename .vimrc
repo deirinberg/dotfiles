@@ -60,6 +60,7 @@ Bundle 'ervandew/supertab'
 Bundle 'SirVer/ultisnips'
 Bundle 'honza/vim-snippets'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'toyamarinyon/vim-swift'
 
 " syntax files
 Bundle 'jelera/vim-javascript-syntax'
