@@ -183,6 +183,8 @@ nnoremap <leader>tgt :set cursorcolumn! cursorline!<CR>
 
 " show hidden files in NERDTree
 let NERDTreeShowHidden=1
+let NERDTreeIgnore = []
+let NERDTreeIgnore += ['^\.DS_Store$']
 
 " kj/jk is better than ctrl-c or esc - also autosave when leaving insert mode
 inoremap kj <Esc>:w<CR>
