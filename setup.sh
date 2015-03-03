@@ -5,7 +5,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 echo "installing homebrew... done"
 
 echo "installing homebrew packages..."
-brew install git cmake node tmux vim ack hub httpie
+brew install git cmake node tmux vim ack hub httpie reattach-to-user-namespace
 brew install fortune cowsay # these are just for fun
 echo "installing homebrew packages... done"
 
