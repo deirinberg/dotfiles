@@ -1,28 +1,28 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Be sure to read the README!
 "   shortcuts:
-"   a: ack from the current directory
-"   b: browse tags
-"   c: toggle comments
+"   ;a: ack from the current directory
+"   ;b: browse tags
+"   ;c: toggle comments
 "   ;C: toggle block comments
-"   nt: open file in new tab
-"   l: toggle NERDTree
-"   h: open a shell in a new tab
-"   k: syntax-check the current file
-"   m: toggle mouse support
-"   p: toggle paste mode
-"   o: open file
-"   s: split window
-"   hs: horizontal split
-"   t: new tab
-"   w: close tab
-"   ed: edit vimrc
-"   src: source vimrc
-"   tgt: display target of cursor position
-"   kj: enter normal mode and save
-"   Ctrl+{h,j,k,l}: move among windows
-"   ii: operate on all text at current indent level
-"   ai: operate on all text plus one line up at current indent level
+"   ;nt: open file in new tab
+"   ;l: toggle NERDTree
+"   ;h: open a shell in a new tab
+"   ;k: syntax-check the current file
+"   ;m: toggle mouse support
+"   ;p: toggle paste mode
+"   ;o: open file
+"   ;s: split window
+"   ;hs: horizontal split
+"   ;t: new tab
+"   ;w: close tab
+"   ;rc: edit vimrc
+"   ;src: source vimrc
+"   ;tgt: display target of cursor position
+"   ;kj/jk: enter normal mode and save
+"   ;Ctrl+{h,j,k,l}: move among windows
+"   ;ii: operate on all text at current indent level
+"   ;ai: operate on all text plus one line up at current indent level
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " vundle
@@ -112,6 +112,7 @@ set hlsearch
 
 " escape search highliting by hitting return
 nnoremap <CR> :noh<CR><CR>
+map <C-;> <ESC>
 
 " disable backups
 set nobackup
@@ -177,8 +178,8 @@ nnoremap <leader>t :tabnew<CR>
 nnoremap <leader>s :vsplit<CR>
 nnoremap <leader>hs :split<CR>
 nnoremap <leader>w :tabclose<CR>
-nnoremap <leader>ed :tabnew ~/.vimrc<cr>
-nnoremap <leader>src :source ~/.vimrc<cr>
+nnoremap <leader>rc :tabnew ~/.vimrc<CR>
+nnoremap <leader>src :source ~/.vimrc<CR>
 nnoremap <leader>tgt :set cursorcolumn! cursorline!<CR>
 
 " show hidden files in NERDTree
@@ -187,8 +188,8 @@ let NERDTreeIgnore = []
 let NERDTreeIgnore += ['^\.DS_Store$']
 
 " kj/jk is better than ctrl-c or esc - also autosave when leaving insert mode
-inoremap kj <Esc>:w<CR>
-inoremap jk <Esc>:w<CR>
+inoremap kj <Esc><Esc>
+inoremap jk <Esc><Esc>
 
 "swap areas of text
 vnoremap <C-X> <Esc>`.``gvP``P
