@@ -208,4 +208,3 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\.so$\|\.dat$|\.DS_Store$'
   \ }
 
-call vundle#config#require(g:bundles)
