@@ -1,0 +1,12 @@
+fpath=( ~/.zsh/prompts "${fpath[@]}" )
+source "$HOME/.zprezto/init.zsh"
+
+local file=""
+for file in $(find $HOME/.zsh/ -name '*.zsh'); do
+  source $file
+done
+
+# source user zshrc
+if [ -f "$HOME/.zshrc.user" ]; then
+  source "$HOME/.zshrc.user"
+fi
