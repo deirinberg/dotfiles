@@ -2,7 +2,7 @@
 
 2) Run the following:
 ```bash
-git clone https://github.com/nitsky/dotfiles.git ~/.dotfiles
+git clone https://github.com/deirinberg/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 // change .gitconfig file to your git user info
 ./install.sh
